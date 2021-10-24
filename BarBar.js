@@ -185,22 +185,6 @@ module.exports = msgHndlr = async (BarBar, mek) => {
                     return mek.reply(help.err().invalid)
                 }
 
-            case "xnxx":
-                if (args.length === 0) return mek.reply(help.err(cmd).deel)
-                if (isUrl(args[0]) && args[0].includes("xnxx")) {
-                    if (args.length === 1) {
-                        isGroup ? mek.reply(help.wait()) : BarBar.sendText(from, help.wait())
-                        return await xnxx.xnxx(BarBar, mek, args[0], anteicodes, help)
-                    } else if (args.length === 2) {
-                        switch (args[1].toLowerCase()) {
-                            case "sd":
-                                isGroup ? mek.reply(help.wait()) : BarBar.sendText(from, help.wait())
-                                return await xnxx.sd(BarBar, mek, args[0], anteicodes, help)
-                            case "hd":
-                                isGroup ? mek.reply(help.wait()) : BarBar.sendText(from, help.wait())
-                                return await xnxx.hd(BarBar, mek, args[0], anteicodes, help)
-                            default:
-                                return
                         }
                     }
                 } else {
