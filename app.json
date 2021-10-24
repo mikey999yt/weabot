@@ -1,0 +1,7 @@
+{
+  "name": "p-well",
+  "description": "whatsapp bot build with nodejs",
+  "repository": "https://github.com/well300/p-well",
+  "logo": "https://i.pinimg.com/236x/c7/d6/3d/c7d63d91a52a4ffc4ae35b257def2b54.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"],
+}
