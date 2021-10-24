@@ -1,1 +1,1 @@
-web: node . --scan
+npm start
